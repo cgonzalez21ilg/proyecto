@@ -1,0 +1,144 @@
+
+#tab-farmacos{
+  color: #1a8354;
+ }
+.contenido{
+    width: 100%;
+    max-width: 1500px;
+    height: 430px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 2px solid #6e6e6e;
+    
+  }
+  
+  .nav__links2{
+    list-style: none;
+    width: 30%;
+    height: 40px;
+    float:right;
+    margin-right: 7%;
+    margin-top: 3%;
+  }
+  
+  .nav__links2 li{
+    display: inline-block;
+    padding: 0px 10px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #070707;
+    cursor: pointer;
+    
+  }
+  
+  .nav__links2 li:hover{
+    color: #7a7979;
+  }
+  .imagen{
+    float: right;
+    width: 45%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 0.5%;
+    margin-right: 20px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+
+  .imagen img{
+    width: 400px;
+    border-radius: 30px;
+}
+.boto{
+  width: 10%;
+  float: right;
+  color: #0088a9;
+  background-color: transparent;
+  border: 2px solid #0088a9;
+  margin-top: 20%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+  .form{
+    float: left;
+    width: 39%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: auto;
+    margin-left: auto;
+    text-align: justify;
+    transition: all 0.25s;
+  }
+
+.proteina{
+    width: 500px;
+    height: 290px;
+    margin-left: 7%;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #070707;
+    border-radius: 30px;
+}
+
+#eliminar{
+  display: none;
+  position: fixed;
+  top:30%;
+  width: 30%;
+  height: 25%;
+  border: 1px solid rgba(0,136,169,0.8);
+  z-index: 5;
+  bottom: 40%;
+  right: 35%;
+  background-color: #efeeed;
+  align-items: center;
+}
+#eliminar p{
+  padding-top: 30px;
+  text-align: center;
+}
+
+#eliminar input{
+  background-color: transparent;
+  color: #0088a9cc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  border: 2px solid #0088a9cc;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 41%;
+  margin-bottom:10px;
+  margin-left: 4%;
+  opacity: 0.8;
+  font-size: 14px;
+  
+}
+
+#eliminar input:hover{
+  background-color: #0088a9cc;
+  color: white;
+}
+
+#eliminarbtn{
+  padding-top: 20px;
+  margin-left: 4%;
+  margin-top: 20px;
+  margin-right: 4%;
+}

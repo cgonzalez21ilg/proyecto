@@ -1,0 +1,66 @@
+#tab-farmacos{
+    color: #1a8354;
+   }
+
+.contenido{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+h3{
+    text-align: center;
+    padding: auto;
+    padding-top: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+
+.buscador{
+    width: 90%;
+    padding-left: 42%;
+
+}
+form input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 0.4%;
+}
+
+.buscar{
+        padding: 6px 20px;
+        background-color: #0088a9;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+}
+.buscar:hover{
+    background-color: #0088a9cc; 
+  }
+
+table{
+    border-collapse: collapse;
+    width: 85%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+tr,td{
+    padding: 1%; 
+}
+
+td a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #070707;
+    text-decoration: none;
+}
+
+td a:hover{
+    color: #325736;
+}
