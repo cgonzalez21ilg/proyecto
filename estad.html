@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/estad.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/3736f3f8a3.js" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
+    <title>Estadísticas</title>
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="css/img/Logo.png" alt="logo"></a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="index.html" class='b'  onclick="canviMenu()" id ="tab-index">Home</a></li>
+            <li><a href="proteinas.html" class='b'  onclick="canviMenu()" id ="tab-proteinas">Proteínas</a></li>
+            <li><a href="farmacos.html" class='b'  onclick="canviMenu()" id ="tab-farmacos">Fármacos</a></li>
+            <li><a href="estad.html" class='b'  onclick="canviMenu()" id ="tab-estad">Estadísticas</a></li>
+        </ul>
+        </nav>
+        <a class="reg" href="#"><button onclick="openForm()">Registrarse</button></a>
+    </header>
+    <hr>
+    <!--TABLAS-->
+    <div id="graficas">
+        <div id="tablas1">
+            <h3>Vacunados Covid-19</h3>
+        <canvas id="bar-chart" width="100" height="50"></canvas>
+        <script>
+            // Bar chart
+        new Chart(document.getElementById("bar-chart"), {
+        type: 'bar',
+        data: {
+          labels: ["Africa", "Asia", "Europa", "Ámerica del Sur", "Ámerica del Norte"],
+          datasets: [
+            {
+              label: "Población (milliones)",
+              backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+              data: [30,5267,250,50,433]
+            }
+          ]
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Vacunados Covid-19'
+          }
+        }
+        });
+        </script>
+        </div>
+        <hr>
+       
+       <div id="tablas2">
+        <h3>Vacunados Covid-19</h3>
+        <canvas id="pie-chart" width="100" height="50"></canvas>
+        <script>new Chart(document.getElementById("pie-chart"), {
+            type: 'pie',
+            data: {
+              labels: ["Africa", "Asia", "Europa", "Ámerica del Sur", "Ámerica del Norte"],
+              datasets: [{
+                label: "Vacunados Covid-19",
+                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                data: [200,4000,1345,400,600]
+              }]
+            },
+            options: {
+              title: {
+                display: true,
+                text: 'Vacunados Covid-19'
+              }
+            }
+        });</script>
+         </div>
+    </div>
+    
+    <!--Login-->
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Insertar Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Insertar Password" name="psw" required>
+    
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+        </form>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer_logo">
+                <div class="logo">
+                    <img src="css/img/Logo.png" alt="logo">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Web</h2>
+                <a href="index.html">Home</a>
+                <a href="proteinas.html">Proteínas</a>
+                <a href="farmacos.html">Fármacos</a>
+                <a href="estad.html">Estadísticas</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Trabajo</h2>
+                <a href="wireframe.html">Wireframe</a>
+                <a href="guiaestilos.html">Guía de Estilos</a>
+                <a href="memoria.html">Memoria</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="www.facebook.com"><i class="fab fa-square-facebook"></i> Facebook</a>
+                <a href="www.twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="www.linkedin.com"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="www.instragram.com"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Proyecto creación web © 2022 <b>Carlos y Meritxell</b></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
